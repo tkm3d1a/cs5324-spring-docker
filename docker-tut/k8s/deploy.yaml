@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: basic-api-deploy
+  labels:
+    app: basic-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: basic-api
+  template:
+    metadata:
+      labels:
+        app: basic-api
+    spec:
+      containers:
+        - name: basic-api-container
+          image: tkm3d1a/spring-docker:latest
