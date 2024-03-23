@@ -65,7 +65,7 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 
 1. **Install Minikube**
 
-- Open a administrato privlidged Powershell window
+- Open a administrator privlidged Powershell window
 - `$ winget install minikube`
 - once installed, run `minikube start` to start the k8s cluster
 - can verify it is running with `kubectl get all` to see the base services running
