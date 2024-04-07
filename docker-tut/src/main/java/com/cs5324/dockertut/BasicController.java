@@ -17,4 +17,11 @@ public class BasicController {
         log.info("isAvailable CALLED");
         return ResponseEntity.ok().body(resp);
     }
+
+    @GetMapping
+    public ResponseEntity<?> home(){
+        BasicResponseDTO resp = new BasicResponseDTO("You have hit the home endpoint of the docker-tut program");
+        log.info("/ CALLED");
+        return ResponseEntity.ok().body(resp);
+    }
 }

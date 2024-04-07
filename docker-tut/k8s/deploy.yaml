@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
         - name: basic-api-container
-          image: tkm3d1a/spring-docker:latest
+          image: tkm3d1a/spring-docker:0.0.5

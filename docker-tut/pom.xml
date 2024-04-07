@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.cs5324</groupId>
     <artifactId>docker-tut</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.4</version>
     <name>docker-tut</name>
     <description>docker-tut</description>
     <properties>
@@ -46,7 +46,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <name>cs5324/${project.artifactId}:${project.version}</name>
+                        <name>tkm3d1a/spring-docker:${project.version}</name>
                     </image>
                     <excludes>
                         <exclude>
